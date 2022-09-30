@@ -1,0 +1,91 @@
+body {
+    background-color: #ccc;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    row-gap: 12px;
+    box-shadow: 1px 2px 6px #ccc;
+}
+
+input,
+select {
+    padding: 24px;
+    border: none;
+    border-radius: 8px;
+}
+
+input:last-child {
+    margin-top: 24px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+}
+
+.rightSection {
+    width: 100%;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories > div {
+    padding: 12px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 8px;
+    min-width: 100px;
+    text-align: center;
+}
+
+.categories > div:hover {
+    background-color: black;
+    color: white;
+}
+
+#data {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+    margin-top: 24px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background: white;
+    font-size: 20px;
+    border-radius: 24px;
+    position: relative;
+}
+
+.category-item {
+    text-align: center;
+    margin-bottom: 12px;
+    font-weight: bolder;
+    font-style: italic;
+    color: cadetblue;
+}
+
+.remove {
+    cursor: pointer;
+    color: red;
+    position: absolute;
+    right: 12px;
+}
